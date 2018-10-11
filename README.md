@@ -1,4 +1,5 @@
-# Taskwarrior for Docker
+
+# Taskwarrior for Docker [![Docker Pulls](https://img.shields.io/docker/pulls/lukd/taskwarrior.svg)](https://hub.docker.com/r/lukd/taskwarrior/)
 
 This is a docker image for the Taskwarrior
 [Taskserver](https://github.com/GothenburgBitFactory/taskserver).
