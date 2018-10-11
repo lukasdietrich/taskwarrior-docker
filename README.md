@@ -5,7 +5,7 @@ This is a docker image for the Taskwarrior
 
 ## Docker-Compose
 
-```
+```yaml
 version: '2.2'
 
 services:
@@ -27,4 +27,19 @@ services:
 
 		volumes:
 			- "./volumes/data:/data"
+```
+
+## Setup
+
+```sh
+$ docker exec -it taskwarrior /bin/sh
+```
+
+### Add Org + User
+
+```sh
+$ taskd add org Public
+$ taskd add user Public User
+$ cd ${TASKDDATA}/pki
+$ ./generate.client User
 ```
